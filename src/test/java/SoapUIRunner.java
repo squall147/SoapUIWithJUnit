@@ -24,8 +24,8 @@ public class SoapUIRunner {
     public void testTestCaseRunner() throws Exception
     {
         WsdlProject project = new WsdlProject( SOAP_PROJECT_XML );
-        TestSuite testSuite = project.getTestSuiteByName( "Test Suite" );
-        TestCase testCase = testSuite.getTestCaseByName( "Test Conversions" );
+        TestSuite testSuite = project.getTestSuiteByName( "Requests for different restaurants" );
+        TestCase testCase = testSuite.getTestCaseByName( "Food Restaurants Near Gdynia" );
 
         // create empty properties and run synchronously
         TestRunner runner = testCase.run( new PropertiesMap(), false );
